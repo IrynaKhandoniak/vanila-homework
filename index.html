@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css" />
     <title>Meteo App</title>
 </head>
 <body>
@@ -11,20 +12,27 @@
             <input type="search" placeholder="Enter the city...." required />
             <input type="submit" value="Search" />
         </form>
-
     </header>
     <main>
-        <div>
-    <h1>London</h1>
-    <p>
-        Monday 19:38, scattered clouds
-        <br />
-        Humidity: 66%, Wind: 3.13km/h
-    </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">London</h1>
+            <p class="weather-app-details">
+              Tuesday 14:49, scattered clouds
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weatehr-app-unit">°C</div>
+          </div>
         </div>
-        <div>🌤️ 17°C</div>
-    </main>
-    <footer>Coded by
+      </main>
+
+    <footer>
+        This project was coded by
         <a href="https://github.com/IrynaKhandoniak" target="_blank">Iryna </a> is
         <a href="https://github.com/IrynaKhandoniak/vanila-homework" target="_blank">open-sourced on GitHub</a> and
         <a href="https://vanila-weatherapp.netlify.app/" target="_blank"> hosted on Netlify</a>
